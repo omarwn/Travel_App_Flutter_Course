@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class BackGroundGradient extends StatelessWidget{
-  double heigth= 300;
-  String text= "Popular";
-  var colorr=0xFF4169D2;
-  var colorr2=0xFF514DBC;
+  final double heigth;
+  final String text;
+  final var colorr2;
+  final var colorr2;
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -17,7 +17,7 @@ class BackGroundGradient extends StatelessWidget{
                 Color(colorr),
                 Color(colorr2),
               ],
-              begin: FractionalOffset(0.5,1.5),
+              begin: Alignment.topCenter , end: Alignment.bottomCenter
 
             )
         ),
